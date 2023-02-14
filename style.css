@@ -103,10 +103,14 @@ main {
 .banner {
   width: 100vw;
   height: 100%;
-  background-color: tomato;
+  background-image: url("img/tech.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-area {
+  max-width: 960px;
   display: flex;
   flex-direction: column;
   text-align: center;
