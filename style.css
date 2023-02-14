@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #010101;
+  height: 100px;
+  color: #fff;
+}
+body {
+  overflow-x: hidden;
+}
+.header-container {
+  display: flex;
+  max-width: 960px;
+  justify-content: space-between;
+
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+.logo span::first-letter {
+  margin-left: 10px;
+}
+.logo span:hover {
+  color: #e0b21a;
+  transition: all 1s linear;
+}
+.menu {
+  display: flex;
+
+  align-items: center;
+  height: 100px;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+.menu li {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* background-color: blue; */
+}
+.menu a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 5px solid #000;
+}
+
+.menu a:hover {
+  transition: all 1s ease;
+  background-color: #3b3a3a;
+
+  border-bottom: 5px solid #c9c8c8;
+}
+
+/* main aqui irei criar o conteudo 2.0 */
+main {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  height: calc(100vh - 100px);
+}
+
+.section-container {
+  max-width: 960px;
+  width: 100vw;
+  flex-direction: row;
+  background-color: yellow;
+}
+/* banner config */
+.section-banner {
+  flex: 1;
+  height: 500px;
+  overflow: hidden;
+}
+
+.section-banner--body {
+  display: flex;
+  width: 1000vw;
+  height: 100%;
+  /* margin-left: -00vw; */
+}
+.banner {
+  width: 100vw;
+  height: 100%;
+  background-color: tomato;
+}
+
+.banner-area {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner-area h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 50px;
+}
+/* animation p */
+
+@keyframes p-animate {
+  0% {
+    margin-left: 300px;
+    transition: all 1s linear;
+  }
+  25% {
+    margin-right: 300px;
+    color: #e0b21a;
+    transition: all 1s linear;
+  }
+  50% {
+    margin-top: 50px;
+    color: #b69015;
+    transition: all 1s linear;
+  }
+  75% {
+    margin-bottom: 50px;
+    transition: all 1s linear;
+  }
+  100% {
+    margin-top: 20px;
+    transition: all 1s linear;
+  }
+}
+
+.banner-area p {
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+  animation-name: p-animate;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
+.section-menu--list {
+  width: 500px;
+  height: 300px;
+  background-color: orange;
+}
