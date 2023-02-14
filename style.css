@@ -178,6 +178,16 @@ main {
   height: 100%;
   text-align: center;
 }
+
+@media (max-width: 450px) {
+  .section-menu--list {
+    height: 700px;
+    flex-direction: column;
+  }
+  .item {
+  }
+}
+
 .item h1 {
   text-transform: uppercase;
   font-size: 25px;
