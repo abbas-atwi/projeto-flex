@@ -184,6 +184,29 @@ main {
   text-align: center;
 }
 
+/* menu burguer */
+
+.menu-burguer {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+}
+.bg {
+  margin: 0 auto;
+  width: 60%;
+  height: 6px;
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+  background-color: #b69015;
+}
+
+/*  */
+
 @media (max-width: 450px) {
   .section-menu--list {
     height: 700px;
@@ -198,6 +221,9 @@ main {
   .logo {
     height: 100px;
   }
+  .menu-burguer {
+    display: flex;
+  }
 }
 
 .item h1 {
@@ -207,3 +233,5 @@ main {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #fff;
 }
+
+/* menu burguer */
