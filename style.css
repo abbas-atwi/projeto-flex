@@ -95,7 +95,7 @@ main {
   display: flex;
   width: 1000vw;
   height: 100%;
-  /* margin-left: -00vw; */
+  margin-left: -200vw;
 }
 .banner {
   width: 100vw;
