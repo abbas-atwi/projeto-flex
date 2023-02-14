@@ -17,7 +17,7 @@ body {
   display: flex;
   max-width: 960px;
   justify-content: space-between;
-
+  overflow: hidden;
   margin: 0 auto;
 }
 
