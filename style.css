@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  translate: no-translate;
-  outline-width: no;
 }
 header {
   background-color: #202135;
@@ -39,7 +37,7 @@ body {
 }
 .menu {
   display: flex;
-  background-color: red;
+  /* background-color: red; */
   align-items: center;
   height: 100px;
 }
@@ -85,7 +83,6 @@ main {
   max-width: 960px;
   width: 100vw;
   flex-direction: row;
-  background-color: yellow;
 }
 /* banner config */
 .section-banner {
@@ -172,8 +169,7 @@ main {
   flex: 1;
   display: flex;
   height: 300px;
-  overflow: hidden;
-  background-color: orange;
+  /* overflow: hidden; */
 }
 .item {
   flex: 1;
@@ -182,6 +178,7 @@ main {
   margin: 5px;
   height: 100%;
   text-align: center;
+  border-bottom: 5px solid #746f6f;
 }
 
 /* menu burguer */
@@ -208,17 +205,29 @@ main {
 /*  */
 
 @media (max-width: 450px) {
+  main {
+    flex-direction: column;
+  }
+  footer {
+    height: 100px;
+    background-color: red;
+  }
   .section-menu--list {
     height: 700px;
     flex-direction: column;
   }
+
+  .open {
+    margin-right: 680px;
+  }
   .menu {
-    width: 200px;
+    width: 300px;
     position: absolute;
     margin-right: 680px;
     justify-content: center;
     height: 100vh;
     transition: all 1s ease;
+    background-color: rgb(0, 0, 0, 0.8);
   }
   .menu ul {
     /* align-items: center; */
@@ -247,4 +256,24 @@ main {
   color: #fff;
 }
 
-/* menu burguer */
+/* Footer */
+footer {
+  color: #ddd;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: normal;
+}
+
+footer p {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+footer q {
+  color: #999;
+}
+footer h3 {
+  font-size: 12px;
+}
