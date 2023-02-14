@@ -1,4 +1,4 @@
 let menuClick = document.querySelector(".menu-burguer");
 menuClick.addEventListener("click", () => {
-  alert();
+  document.querySelector(".menu").style.marginRight = "250px";
 });
