@@ -169,7 +169,7 @@ main {
   flex: 1;
   display: flex;
   height: 300px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .item {
   flex: 1;
@@ -206,7 +206,7 @@ main {
 
 @media (max-width: 450px) {
   main {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   footer {
     height: 100px;
@@ -221,7 +221,7 @@ main {
     margin-right: 680px;
   }
   .menu {
-    width: 300px;
+    width: 200px;
     position: absolute;
     margin-right: 680px;
     justify-content: center;
@@ -257,7 +257,7 @@ main {
 }
 
 /* Footer */
-footer {
+/* footer {
   color: #ddd;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -276,4 +276,4 @@ footer q {
 }
 footer h3 {
   font-size: 12px;
-}
+} */
