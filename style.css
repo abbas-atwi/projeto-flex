@@ -187,8 +187,10 @@ main {
 /* menu burguer */
 
 .menu-burguer {
-  position: relative;
+  position: absolute;
   display: flex;
+  background-color: red;
+  margin-left: 650px;
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
@@ -206,7 +208,7 @@ main {
 
 /*  */
 
-@media (min-width: 450px) {
+@media (max-width: 450px) {
   .section-menu--list {
     height: 700px;
     flex-direction: column;
