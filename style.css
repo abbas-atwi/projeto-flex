@@ -185,7 +185,14 @@ main {
     height: 700px;
     flex-direction: column;
   }
-  .item {
+  .menu {
+    display: none;
+  }
+  .header-container {
+    justify-content: center;
+  }
+  .logo {
+    height: 100px;
   }
 }
 
